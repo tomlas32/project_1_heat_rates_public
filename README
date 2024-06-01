@@ -1,7 +1,7 @@
 Automated Temperature Analysis README
 
 Project Overview
-This project is designed to automate the analysis of temperature readings from multiple .txt files. Each file contains time and temperature data from four separate channels monitored simultaneously. The analysis includes determining the average, minimum, and maximum values recorded at the last four temperature holds, as well as calculating the average rate of heating and cooling within the fast cycling phase. The script also extracts the instrument name and date from the file name and generates a CSV report with the summarized data. Additionally, the user has the option to plot various elements of the data and model fits.
+This project is designed to automate the analysis of temperature readings from multiple .txt files. Each file contains time and temperature data from four separate channels monitored simultaneously. The analysis includes determining the average, minimum, and maximum values recorded at the last four temperature holds, as well as calculating the average rate of heating and cooling within the fast cycling phase (Note: the rates needed to be calculated between 60 and 95 degC). The script also extracts the instrument name and date from the file name and generates a CSV report with the summarized data. Additionally, the user has the option to plot various elements of the data and model fits.
 
 Files in the Project
 1. project1_main.py
