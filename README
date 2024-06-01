@@ -1,0 +1,41 @@
+Automated Temperature Analysis README
+
+Project Overview
+This project is designed to automate the analysis of temperature readings from multiple .txt files. Each file contains time and temperature data from four separate channels monitored simultaneously. The analysis includes determining the average, minimum, and maximum values recorded at the last four temperature holds, as well as calculating the average rate of heating and cooling within the fast cycling phase. The script also extracts the instrument name and date from the file name and generates a CSV report with the summarized data. Additionally, the user has the option to plot various elements of the data and model fits.
+
+Files in the Project
+1. project1_main.py
+
+This is the main script to be executed for the automated analysis. It handles the following tasks:
+Reading multiple .txt files with temperature data.
+Extracting instrument name and date from the file names.
+Performing data analysis to determine average, minimum, and maximum values during the last four temperature holds.
+Calculating the average rates of heating and cooling during the fast cycling phase.
+Generating a CSV report with the analyzed data.
+Providing an option to plot data and model fits.
+
+2. project1_functions.py
+This script contains function definitions that are utilized by project1_main.py. The functions are modular and reusable, allowing for clean and maintainable code. 
+Key functions include:
+File reading and data extraction.
+Temperature analysis algorithms.
+CSV report generation.
+Plotting utilities.
+
+How to Use
+Prerequisites
+Python 3.x
+Required Python packages: numpy, pandas, matplotlib, scipy
+
+Setup
+Clone this repository to your local machine.
+Navigate to the project directory.
+Install the required Python packages using pip
+
+Output
+The script will generate a CSV report with the following information:
+
+Instrument name and date.
+Average, minimum, and maximum temperatures during the last four temperature holds for each channel.
+Average rates of heating and cooling during the fast cycling phase for each channel.
+Model fit evaluation analysis using R-sq and RMSE per each channel. 
